@@ -3,10 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Pages</title>
+  <title>My GitHub Pages - Trends Embed</title>
 </head>
 <body>
-  <h1>Welcome to My GitHub Pages!</h1>
-  <p>This is my first GitHub Pages site.</p>
+  <h1>Google Trends - 관련 검색어</h1>
+  
+  <!-- Google Trends Embed 코드 추가 -->
+  <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4004_RC01/embed_loader.js"></script>
+  <script type="text/javascript">
+    trends.embed.renderExploreWidget("RELATED_QUERIES", {
+      "comparisonItem":[{
+        "keyword":"수분 크림",
+        "geo":"KR",
+        "time":"today 1-m"
+      }],
+      "category":44,
+      "property":""
+    }, {
+      "exploreQuery":"cat=44&date=today%201-m&geo=KR&q=%EC%88%98%EB%B6%84%20%ED%81%AC%EB%A6%BC&hl=ko",
+      "guestPath":"https://trends.google.co.kr:443/trends/embed/"
+    });
+  </script>
+
+  <!-- 여기에 다른 내용 추가 가능 -->
 </body>
 </html>
